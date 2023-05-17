@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="./images/game.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Project with JS</title>
+</head>
+<body class="body">
+    <header>
+        <h1 class="title">Guess the number</h1>
+    </header>
+    <main>
+        <form class="form">
+            <label for="inputNumber" class="label">Enter your number here:</label>
+            <div class="box-one">
+                 <input type="number" id="inputNumber" value="" placeholder="Write a number between 1 and 100" class="input js-inputNumber"/>
+                 <input type="button" value="Enter" class="js-button button"/>
+            </div>
+            <p class="paragraph js-text">Write a number and click Enter </p>
+            <!--poner con p No input-->
+            <p class="counter js-counter">Number of attemps: 0</p>    
+            <!--Button that cleans the input, the counter, writes the initial feedback and generates a new random number to play again!-->
+           <input type="reset" class="reset js-reset"
+           value="Play Again"/>
+        </form>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
